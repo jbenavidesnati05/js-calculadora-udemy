@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aplicacion calculadora</h1>
+    </div>
+
+    <form class="formulario" id="forma">
+        <label for="operandoA">Operando A</label>
+        <input
+          id="operandoA"
+          type="number"
+          placeholder="Ingresa Operando A"
+        />
+        <label for="operandoB">Operando B</label>
+        <input
+          id="operandoB"
+          type="number"
+          placeholder="Ingresa Operando B"
+        />
+    </form>
+    <div class="botones">
+      <div class="operacion">
+        <button onclick="sumar()">SUMAR</button>
+      </div>
+      <div class="operacion">
+        <button onclick="restar()">RESTAR</button>
+      </div>
+      <div class="operacion">
+        <button onclick="multiplicar()">MULTIPLICAR</button>
+      </div>
+      <div class="operacion">
+        <button onclick="dividir()">DIVIDIR</button>
+      </div>
+    </div>
+    <div class="resultado" id="resultado"></div>
+    <div class="limpiar">
+      <button onclick="limpiar()">LIMPIAR VALORES</button>
+    </div>
+    </div class="operacion">
+    <footer>
+      <p>Copyright-2022-@jbenavidesnati05-OTIDERCETSIS SAS</p>
+    </footer>
+    <!-- ____________________________JAVASCRIPT______________________________________  -->
+    <script src="main.js"></script>
+  </body>
+</html>
