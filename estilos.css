@@ -19,11 +19,11 @@ h1 {
   display: block;
   /* color: white; */
   margin: 10px auto 0px auto; 
-  width: 60%;
+  max-width: 60%;
   /* height: 2em; */
 }
 input{
-    height: 2em;
+    max-height: 2em;
 }
 label{
   color: white;
@@ -51,21 +51,28 @@ button {
   border: 1px solid white;
   font-size: 16px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  padding: 5px;
+  padding: 10px 10px;
 }
 .botones {
-  width: 25%;
-  margin: auto;
+ /* border: 1px solid black; */
+ max-width: 60%;
+ margin: auto;
+ display: flex;
+ justify-content: space-around;
+
 }
 .limpiar{
-  width: 11%;
+  width: 100%;
   margin: auto;
+  display: flex;
+  justify-content: center;
   padding-bottom: 20px;
 }
 
 .limpiar button{
-  width:  155px;
-  margin: auto;
+  max-width:  200px;
+  height: auto;
+  /* margin: auto; */
 }
 
 .resultado {
@@ -80,9 +87,4 @@ footer {
   text-align: center;
   color: rgb(68, 64, 64);
   padding-bottom: 25px;
-}
-.botones .operacion {
-  display: inline;
-  width: 4em;
-  /* border: 1px solid black; */
 }

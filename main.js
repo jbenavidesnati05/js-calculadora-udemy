@@ -43,6 +43,7 @@ function dividir(){
     let resultado = operandoA / operandoB;
     if(isNaN(resultado)){
         document.getElementById("resultado").innerHTML=`Por favor ingrese los dos numeros¡¡¡`        
+
     }else{
     document.getElementById("resultado").innerHTML =`El Resultado de la Division es: ${resultado}`;
     console.log(resultado)
